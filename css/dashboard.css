@@ -79,6 +79,40 @@ z-index: 99999999;
 
 #logo{display:block;position:relative;top:13px;background:url("../images/coordination.png");width:48px;height:48px}
 
+
+/* Coloring the bar of the stack chart http://www.solinea.com/blog/coloring-dcjs-stacked-bar-charts */
+
+#chart g.stack._0  > rect.bar {
+    stroke: none;
+    fill: #5bc0de;
+}
+
+#chart g.stack._1 > rect.bar {
+    stroke: none;
+    fill: #e99002;
+}
+
+#chart g.stack._2 > rect.bar {
+    stroke: none;
+    fill: green;
+}
+
+#chart g.dc-legend-item:nth-child(1) > rect:nth-child(1) {
+    stroke: none;
+    fill: #5bc0de;
+}
+
+#chart g.dc-legend-item:nth-child(2) > rect:nth-child(1) {
+    stroke: none;
+    fill: #e99002;
+}
+
+#chart g.dc-legend-item:nth-child(3) > rect:nth-child(1) {
+    stroke: none;
+    fill: green;
+}
+
+
 /* ### General control styles ### 
 .viz-share div,
 .viz-share .twitter,
