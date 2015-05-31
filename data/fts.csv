@@ -1,140 +1,140 @@
-Sector,Partner,Required,Receive,Percentage,Quarter,Year
-Basic Needs,UNHCR,97851431,8989472,9%, First Quarter ,2015
-Basic Needs,UNICEF,31500000,6547279,21%, First Quarter ,2015
-Basic Needs,NRC,6000000,1082222,18%, First Quarter ,2015
-Basic Needs,SCI,5940000,2121834,36%, First Quarter ,2015
-Basic Needs,Caritas,5845690,0,0%, First Quarter ,2015
-Basic Needs,NEF,5520000,0,0%, First Quarter ,2015
-Basic Needs,ACF,3872600,249366,6%, First Quarter ,2015
-Basic Needs,OXFAM,3304445,0,0%, First Quarter ,2015
-Basic Needs,IRC,1974564,744419,38%, First Quarter ,2015
-Basic Needs,JHAS,1784640,0,0%, First Quarter ,2015
-Basic Needs,MEDAIR,1727924,259041,15%, First Quarter ,2015
-Basic Needs,HI,1494000,994350,67%, First Quarter ,2015
-Basic Needs,LWF,1300000,362000,28%, First Quarter ,2015
-Basic Needs,ICMC,1191632,373311,31%, First Quarter ,2015
-Basic Needs,CARE,1081976,2000000,185%, First Quarter ,2015
-Basic Needs,PU-AMI,1072500,270874,25%, First Quarter ,2015
-Basic Needs,WVI,820000,0,0%, First Quarter ,2015
-Basic Needs,AVSI,790000,0,0%, First Quarter ,2015
-Basic Needs,Intersos,777000,0,0%, First Quarter ,2015
-Basic Needs,ActionAid,600280,245624,41%, First Quarter ,2015
-Basic Needs,NICCOD,354200,366979,104%, First Quarter ,2015
-Basic Needs,JEN,300000,0,0%, First Quarter ,2015
-Food,WFP,232471740,36820149,16%, First Quarter ,2015
-Food,Caritas,1355932,0,0%, First Quarter ,2015
-Food,FAO,1300000,950000,73%, First Quarter ,2015
-Food,WVI,799996,291682,36%, First Quarter ,2015
-Food,ACTED,235900,0,0%, First Quarter ,2015
-Food,FPSC,150000,0,0%, First Quarter ,2015
-Food,IR,37836,0,0%, First Quarter ,2015
-Food,UNFPA,28000,0,0%, First Quarter ,2015
-Food,Un Women,25000,0,0%, First Quarter ,2015
-Education,UNICEF,42354500,5200154,12%, First Quarter ,2015
-Education,SCI,11413738,8918648,78%, First Quarter ,2015
-Education,NRC,3819000,3174211,83%, First Quarter ,2015
-Education,Caritas,3334635,0,0%, First Quarter ,2015
-Education,UNHCR,3098087,91497,3%, First Quarter ,2015
-Education,FCA,2769760,500000,18%, First Quarter ,2015
-Education,UNESCO,2350000,0,0%, First Quarter ,2015
-Education,IR,2276730,0,0%, First Quarter ,2015
-Education,WVI,1950000,539917,28%, First Quarter ,2015
-Education,RI,1000000,0,0%, First Quarter ,2015
-Education,LWF,740000,342000,46%, First Quarter ,2015
-Education,Intersos,732000,0,0%, First Quarter ,2015
-Education,WarChild UK,645000,110000,17%, First Quarter ,2015
-Education,DRC,562358,0,0%, First Quarter ,2015
-Education,JEN,500500,384980,77%, First Quarter ,2015
-Education,FPSC,500000,0,0%, First Quarter ,2015
-Education,KnK,454400,881352,194%, First Quarter ,2015
-Education,ICSC,449995,0,0%, First Quarter ,2015
-Education,Questcope,270700,0,0%, First Quarter ,2015
-Education,OXFAM,270000,0,0%, First Quarter ,2015
-Education,ActionAid,269200,71566,27%, First Quarter ,2015
-Education,ACTED,225000,0,0%, First Quarter ,2015
-Education,AVSI,207500,0,0%, First Quarter ,2015
-Education,ICMC,195667,15624,8%, First Quarter ,2015
-Education,MECI,169000,0,0%, First Quarter ,2015
-WASH,UNICEF,43350000,19568218,45%, First Quarter ,2015
-WASH,UNHCR,10196998,301151,3%, First Quarter ,2015
-WASH,OXFAM,9454656,997750,11%, First Quarter ,2015
-WASH,Mercy Corps,5000000,0,0%, First Quarter ,2015
-WASH,ACTED,3761000,0,0%, First Quarter ,2015
-WASH,RI,1687500,0,0%, First Quarter ,2015
-WASH,WVI,1310000,0,0%, First Quarter ,2015
-WASH,IRD,1190000,0,0%, First Quarter ,2015
-WASH,JEN,653198,890693,136%, First Quarter ,2015
-WASH,Caritas,532635,0,0%, First Quarter ,2015
-WASH,ICMC,357492,153697,43%, First Quarter ,2015
-WASH,DRC,230000,0,0%, First Quarter ,2015
-WASH,NICCOD,39100,253612,649%, First Quarter ,2015
-WASH,LWF,15000,26000,173%, First Quarter ,2015
-WASH,ACF,0,98814,0%, First Quarter ,2015
-Shelter,UNHCR,95162239,2860250,3%, First Quarter ,2015
-Shelter,NRC,8885400,6859425,77%, First Quarter ,2015
-Shelter,KfW,3000000,0,0%, First Quarter ,2015
-Shelter,Caritas,2699680,0,0%, First Quarter ,2015
-Shelter,PU-AMI,2028774,172887,9%, First Quarter ,2015
-Shelter,MEDAIR,2001182,0,0%, First Quarter ,2015
-Shelter,IR,1370233,0,0%, First Quarter ,2015
-Shelter,ACTED,1050000,0,0%, First Quarter ,2015
-Shelter,Intersos,845000,0,0%, First Quarter ,2015
-Shelter,LWF,800000,0,0%, First Quarter ,2015
-Shelter,ICMC,506211,360882,71%, First Quarter ,2015
-Shelter,JHAS,208000,0,0%, First Quarter ,2015
-Health,UNHCR,19566426,4299087,22%, First Quarter ,2015
-Health,UNICEF,6710000,958084,14%, First Quarter ,2015
-Health,UNFPA,4425230,0,0%, First Quarter ,2015
-Health,Caritas,3846200,0,0%, First Quarter ,2015
-Health,CVT,3600000,0,0%, First Quarter ,2015
-Health,HI,3599000,1802199,50%, First Quarter ,2015
-Health,QRC,3360000,0,0%, First Quarter ,2015
-Health,IRC,2479230,3092708,125%, First Quarter ,2015
-Health,JHAS,1569000,0,0%, First Quarter ,2015
-Health,WHO,1200000,0,0%, First Quarter ,2015
-Health,IOM,1133606,414935,37%, First Quarter ,2015
-Health,IMC,1062003,0,0%, First Quarter ,2015
-Health,IRD,1008000,316909,31%, First Quarter ,2015
-Health,MEDAIR,660151,0,0%, First Quarter ,2015
-Health,NICCOD,180600,237752,132%, First Quarter ,2015
-Health,PU-AMI,90000,0,0%, First Quarter ,2015
-Protection,UNHCR,62920689,5530193,9%, First Quarter ,2015
-Protection,UNICEF,20045232,656542,3%, First Quarter ,2015
-Protection,UNFPA,7176620,0,0%, First Quarter ,2015
-Protection,IOM,4750000,0,0%, First Quarter ,2015
-Protection,Mercy Corps,4700000,0,0%, First Quarter ,2015
-Protection,DRC,4462056,680392,15%, First Quarter ,2015
-Protection,CARE,3020240,800000,26%, First Quarter ,2015
-Protection,UNOPS,2000000,0,0%, First Quarter ,2015
-Protection,Intersos,1783600,1860583,104%, First Quarter ,2015
-Protection,IMC,1743401,0,0%, First Quarter ,2015
-Protection,JHAS,1700000,0,0%, First Quarter ,2015
-Protection,FPSC,1664816,57242,3%, First Quarter ,2015
-Protection,ICSC,1500000,0,0%, First Quarter ,2015
-Protection,ACTED,1325500,0,0%, First Quarter ,2015
-Protection,Questcope,1230000,49233,4%, First Quarter ,2015
-Protection,SCI,1198314,3037340,253%, First Quarter ,2015
-Protection,ActionAid,1157350,141163,12%, First Quarter ,2015
-Protection,Un Women,1019000,600000,59%, First Quarter ,2015
-Protection,HI,900000,340583,38%, First Quarter ,2015
-Protection,WarChild UK,814100,0,0%, First Quarter ,2015
-Protection,TDH,759915,680173,90%, First Quarter ,2015
-Protection,ILO,700000,0,0%, First Quarter ,2015
-Protection,LWF,645000,300,0%, First Quarter ,2015
-Protection,SC Jordan,600276,0,0%, First Quarter ,2015
-Protection,ACF,571600,0,0%, First Quarter ,2015
-Protection,IRC,546325,1041832,191%, First Quarter ,2015
-Protection,OXFAM,534000,121374,23%, First Quarter ,2015
-Protection,ICMC,510246,268384,53%, First Quarter ,2015
-Protection,NICCOD,427400,392521,92%, First Quarter ,2015
-Protection,WVI,400600,0,0%, First Quarter ,2015
-Protection,MPDL,390000,174186,45%, First Quarter ,2015
-Protection,UPP,374910,0,0%, First Quarter ,2015
-Protection,PU-AMI,368248,95740,26%, First Quarter ,2015
-Protection,NRC,300000,300000,100%, First Quarter ,2015
-Protection,APS,154420,0,0%, First Quarter ,2015
-Protection,Caritas,138331,0,0%, First Quarter ,2015
-Protection,MEDAIR,60996,0,0%, First Quarter ,2015
-Protection,,,0,,Second Quarter,2015
-Protection,,,0,,Third Quarter,2015
-Protection,,,0,,Fourth Quarter,2015
+Sector,Partner,Required,Receive,Percentage,Quarter,Year,Gap
+Basic Needs,UNHCR,97851431,8989472,9%, First Quarter ,2015,88861959
+Basic Needs,UNICEF,31500000,6547279,21%, First Quarter ,2015,24952721
+Basic Needs,NRC,6000000,1082222,18%, First Quarter ,2015,4917778
+Basic Needs,SCI,5940000,2121834,36%, First Quarter ,2015,3818166
+Basic Needs,Caritas,5845690,0,0%, First Quarter ,2015,5845690
+Basic Needs,NEF,5520000,0,0%, First Quarter ,2015,5520000
+Basic Needs,ACF,3872600,249366,6%, First Quarter ,2015,3623234
+Basic Needs,OXFAM,3304445,0,0%, First Quarter ,2015,3304445
+Basic Needs,IRC,1974564,744419,38%, First Quarter ,2015,1230145
+Basic Needs,JHAS,1784640,0,0%, First Quarter ,2015,1784640
+Basic Needs,MEDAIR,1727924,259041,15%, First Quarter ,2015,1468883
+Basic Needs,HI,1494000,994350,67%, First Quarter ,2015,499650
+Basic Needs,LWF,1300000,362000,28%, First Quarter ,2015,938000
+Basic Needs,ICMC,1191632,373311,31%, First Quarter ,2015,818321
+Basic Needs,CARE,1081976,2000000,185%, First Quarter ,2015,-918024
+Basic Needs,PU-AMI,1072500,270874,25%, First Quarter ,2015,801626
+Basic Needs,WVI,820000,0,0%, First Quarter ,2015,820000
+Basic Needs,AVSI,790000,0,0%, First Quarter ,2015,790000
+Basic Needs,Intersos,777000,0,0%, First Quarter ,2015,777000
+Basic Needs,ActionAid,600280,245624,41%, First Quarter ,2015,354656
+Basic Needs,NICCOD,354200,366979,104%, First Quarter ,2015,-12779
+Basic Needs,JEN,300000,0,0%, First Quarter ,2015,300000
+Food,WFP,232471740,36820149,16%, First Quarter ,2015,195651591
+Food,Caritas,1355932,0,0%, First Quarter ,2015,1355932
+Food,FAO,1300000,950000,73%, First Quarter ,2015,350000
+Food,WVI,799996,291682,36%, First Quarter ,2015,508314
+Food,ACTED,235900,0,0%, First Quarter ,2015,235900
+Food,FPSC,150000,0,0%, First Quarter ,2015,150000
+Food,IR,37836,0,0%, First Quarter ,2015,37836
+Food,UNFPA,28000,0,0%, First Quarter ,2015,28000
+Food,Un Women,25000,0,0%, First Quarter ,2015,25000
+Education,UNICEF,42354500,5200154,12%, First Quarter ,2015,37154346
+Education,SCI,11413738,8918648,78%, First Quarter ,2015,2495090
+Education,NRC,3819000,3174211,83%, First Quarter ,2015,644789
+Education,Caritas,3334635,0,0%, First Quarter ,2015,3334635
+Education,UNHCR,3098087,91497,3%, First Quarter ,2015,3006590
+Education,FCA,2769760,500000,18%, First Quarter ,2015,2269760
+Education,UNESCO,2350000,0,0%, First Quarter ,2015,2350000
+Education,IR,2276730,0,0%, First Quarter ,2015,2276730
+Education,WVI,1950000,539917,28%, First Quarter ,2015,1410083
+Education,RI,1000000,0,0%, First Quarter ,2015,1000000
+Education,LWF,740000,342000,46%, First Quarter ,2015,398000
+Education,Intersos,732000,0,0%, First Quarter ,2015,732000
+Education,WarChild UK,645000,110000,17%, First Quarter ,2015,535000
+Education,DRC,562358,0,0%, First Quarter ,2015,562358
+Education,JEN,500500,384980,77%, First Quarter ,2015,115520
+Education,FPSC,500000,0,0%, First Quarter ,2015,500000
+Education,KnK,454400,881352,194%, First Quarter ,2015,-426952
+Education,ICSC,449995,0,0%, First Quarter ,2015,449995
+Education,Questcope,270700,0,0%, First Quarter ,2015,270700
+Education,OXFAM,270000,0,0%, First Quarter ,2015,270000
+Education,ActionAid,269200,71566,27%, First Quarter ,2015,197634
+Education,ACTED,225000,0,0%, First Quarter ,2015,225000
+Education,AVSI,207500,0,0%, First Quarter ,2015,207500
+Education,ICMC,195667,15624,8%, First Quarter ,2015,180043
+Education,MECI,169000,0,0%, First Quarter ,2015,169000
+WASH,UNICEF,43350000,19568218,45%, First Quarter ,2015,23781782
+WASH,UNHCR,10196998,301151,3%, First Quarter ,2015,9895847
+WASH,OXFAM,9454656,997750,11%, First Quarter ,2015,8456906
+WASH,Mercy Corps,5000000,0,0%, First Quarter ,2015,5000000
+WASH,ACTED,3761000,0,0%, First Quarter ,2015,3761000
+WASH,RI,1687500,0,0%, First Quarter ,2015,1687500
+WASH,WVI,1310000,0,0%, First Quarter ,2015,1310000
+WASH,IRD,1190000,0,0%, First Quarter ,2015,1190000
+WASH,JEN,653198,890693,136%, First Quarter ,2015,-237495
+WASH,Caritas,532635,0,0%, First Quarter ,2015,532635
+WASH,ICMC,357492,153697,43%, First Quarter ,2015,203795
+WASH,DRC,230000,0,0%, First Quarter ,2015,230000
+WASH,NICCOD,39100,253612,649%, First Quarter ,2015,-214512
+WASH,LWF,15000,26000,173%, First Quarter ,2015,-11000
+WASH,ACF,0,98814,0%, First Quarter ,2015,-98814
+Shelter,UNHCR,95162239,2860250,3%, First Quarter ,2015,92301989
+Shelter,NRC,8885400,6859425,77%, First Quarter ,2015,2025975
+Shelter,KfW,3000000,0,0%, First Quarter ,2015,3000000
+Shelter,Caritas,2699680,0,0%, First Quarter ,2015,2699680
+Shelter,PU-AMI,2028774,172887,9%, First Quarter ,2015,1855887
+Shelter,MEDAIR,2001182,0,0%, First Quarter ,2015,2001182
+Shelter,IR,1370233,0,0%, First Quarter ,2015,1370233
+Shelter,ACTED,1050000,0,0%, First Quarter ,2015,1050000
+Shelter,Intersos,845000,0,0%, First Quarter ,2015,845000
+Shelter,LWF,800000,0,0%, First Quarter ,2015,800000
+Shelter,ICMC,506211,360882,71%, First Quarter ,2015,145329
+Shelter,JHAS,208000,0,0%, First Quarter ,2015,208000
+Health,UNHCR,19566426,4299087,22%, First Quarter ,2015,15267339
+Health,UNICEF,6710000,958084,14%, First Quarter ,2015,5751916
+Health,UNFPA,4425230,0,0%, First Quarter ,2015,4425230
+Health,Caritas,3846200,0,0%, First Quarter ,2015,3846200
+Health,CVT,3600000,0,0%, First Quarter ,2015,3600000
+Health,HI,3599000,1802199,50%, First Quarter ,2015,1796801
+Health,QRC,3360000,0,0%, First Quarter ,2015,3360000
+Health,IRC,2479230,3092708,125%, First Quarter ,2015,-613478
+Health,JHAS,1569000,0,0%, First Quarter ,2015,1569000
+Health,WHO,1200000,0,0%, First Quarter ,2015,1200000
+Health,IOM,1133606,414935,37%, First Quarter ,2015,718671
+Health,IMC,1062003,0,0%, First Quarter ,2015,1062003
+Health,IRD,1008000,316909,31%, First Quarter ,2015,691091
+Health,MEDAIR,660151,0,0%, First Quarter ,2015,660151
+Health,NICCOD,180600,237752,132%, First Quarter ,2015,-57152
+Health,PU-AMI,90000,0,0%, First Quarter ,2015,90000
+Protection,UNHCR,62920689,5530193,9%, First Quarter ,2015,57390496
+Protection,UNICEF,20045232,656542,3%, First Quarter ,2015,19388690
+Protection,UNFPA,7176620,0,0%, First Quarter ,2015,7176620
+Protection,IOM,4750000,0,0%, First Quarter ,2015,4750000
+Protection,Mercy Corps,4700000,0,0%, First Quarter ,2015,4700000
+Protection,DRC,4462056,680392,15%, First Quarter ,2015,3781664
+Protection,CARE,3020240,800000,26%, First Quarter ,2015,2220240
+Protection,UNOPS,2000000,0,0%, First Quarter ,2015,2000000
+Protection,Intersos,1783600,1860583,104%, First Quarter ,2015,-76983
+Protection,IMC,1743401,0,0%, First Quarter ,2015,1743401
+Protection,JHAS,1700000,0,0%, First Quarter ,2015,1700000
+Protection,FPSC,1664816,57242,3%, First Quarter ,2015,1607574
+Protection,ICSC,1500000,0,0%, First Quarter ,2015,1500000
+Protection,ACTED,1325500,0,0%, First Quarter ,2015,1325500
+Protection,Questcope,1230000,49233,4%, First Quarter ,2015,1180767
+Protection,SCI,1198314,3037340,253%, First Quarter ,2015,-1839026
+Protection,ActionAid,1157350,141163,12%, First Quarter ,2015,1016187
+Protection,Un Women,1019000,600000,59%, First Quarter ,2015,419000
+Protection,HI,900000,340583,38%, First Quarter ,2015,559417
+Protection,WarChild UK,814100,0,0%, First Quarter ,2015,814100
+Protection,TDH,759915,680173,90%, First Quarter ,2015,79742
+Protection,ILO,700000,0,0%, First Quarter ,2015,700000
+Protection,LWF,645000,300,0%, First Quarter ,2015,644700
+Protection,SC Jordan,600276,0,0%, First Quarter ,2015,600276
+Protection,ACF,571600,0,0%, First Quarter ,2015,571600
+Protection,IRC,546325,1041832,191%, First Quarter ,2015,-495507
+Protection,OXFAM,534000,121374,23%, First Quarter ,2015,412626
+Protection,ICMC,510246,268384,53%, First Quarter ,2015,241862
+Protection,NICCOD,427400,392521,92%, First Quarter ,2015,34879
+Protection,WVI,400600,0,0%, First Quarter ,2015,400600
+Protection,MPDL,390000,174186,45%, First Quarter ,2015,215814
+Protection,UPP,374910,0,0%, First Quarter ,2015,374910
+Protection,PU-AMI,368248,95740,26%, First Quarter ,2015,272508
+Protection,NRC,300000,300000,100%, First Quarter ,2015,0
+Protection,APS,154420,0,0%, First Quarter ,2015,154420
+Protection,Caritas,138331,0,0%, First Quarter ,2015,138331
+Protection,MEDAIR,60996,0,0%, First Quarter ,2015,60996
+Protection,,,0,,Second Quarter,2015,0
+Protection,,,0,,Third Quarter,2015,0
+Protection,,,0,,Fourth Quarter,2015,0

@@ -3,16 +3,22 @@
 <head>
 <meta charset='utf-8'>
 <meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0' name='viewport'>
-<meta property="og:title" content="2015 INTER-AGENCY FINANCIAL TRACKING -JORDAN"/>
+<meta property="og:title" content="Jordan Inter-Agency Financial Tracking - 2015"/>
 <meta property="og:type" content="article"/>
-<meta property="og:site_name" content="2015 INTER-AGENCY FINANCIAL TRACKING -JORDAN"/>
-<meta property="og:description" content="2015 INTER-AGENCY FINANCIAL TRACKING -JORDAN"/>
-    <title>2015 INTER-AGENCY FINANCIAL TRACKING -JORDAN</title>
+<meta property="og:site_name" content="Jordan Inter-Agency Financial Tracking - 2015"/>
+<meta property="og:description" content="Jordan Inter-Agency Financial Tracking - 2015"/>
+    <title>Jordan Inter-Agency Financial Tracking - 2015 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+
+    <link rel="stylesheet" href="css/bootswatch.min.css">
+    <link rel="stylesheet" href="css/font-humanitarian.css">
+
     <link rel="stylesheet" type="text/css" href="css/dc.css"/>
+
     <link rel="stylesheet" type="text/css" href="css/3w-dashboard.css"/>
+    <!---->
     <!-- Add IntroJs styles and JS -->
     <link rel="stylesheet" type="text/css" href="css/introjs.min.css" >
     <script type="text/javascript" src="js/intro.min.js"></script>
@@ -20,14 +26,14 @@
     <!-- map the data to the GeoJSON object -->
     <script src="js/data-jo.js"></script>
     <link href="http://www.unhcr.org/favicon.ico" rel="icon" type="image/x-icon">
-	<!-- hide and display Disclaimer -->
-	<script>
-		function show(shown, hidden) {
-		  document.getElementById(shown).style.display='block';
-		  document.getElementById(hidden).style.display='none';
-		  return false;
-		}
-	</script>
+    <!-- hide and display Disclaimer -->
+    <script>
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          return false;
+        }
+    </script>
   </head>
 
   <body>
@@ -35,66 +41,47 @@
         <small>This webpage does not work on IE8 or older... Upgrade your browser if needed</a></a></small>
     </div>
     <div class="container" id="dashboard">
-        <h1><a  
-        href="http://data.unhcr.org/jordan"><img 
-        src="images/coordination.png" style="height: 48px; width: 48px"></a><strong>2015 INTER-AGENCY FINANCIAL TRACKING -JORDAN</strong></h1>
-		<div id="count-info" ><strong><span class="filter-count "></span></strong> selected out of <span class="total-count "></span> records
-		<a class="btn btn-primary btn-sm" href="javascript:dc.filterAll();dc.redrawAll();">Reset All</a>
-		</div>
-		<div class="col-xs-12" id="disc1" align="right">
-			<a href="#" onclick="return show('disc2','disc1');"> Disclaimer	&#9660</a>
-		</div>
-        <div class="col-xs-12" id="disc2" style="display:none">
-			<div align="right">	<a href="#" onclick="return show('disc1','disc2');"> Disclaimer	&#9650</a> </div><br>
-			This FTS is based on funds received by refugee response partners in Jordan. It only covers the inter-agency appeal for the refugee pillar of the 3RP, in support of the Jordan Response Plan (JRP). The JRP FTS remains the authoritative source for funds pledged and allocated to the JRP log-frame. For more information, see <a href="http://www.jrpsc.org/financial-tracking/" target="_blank">  http://www.jrpsc.org/financial-tracking/ </a> <br><br>
-		</div>
-            <div class="socialmedia" data-step="6" data-intro="Feel Free to share if you like it!" data-position='left'>
-                <table>
-                  <tr>
-                    <td valign="middle" ><br><br><a href="index1.html" target="_blank"> FTS Bubble Chart </a></td>
-				  </tr>
-                </table>
-           </div>
+        <div class="row" >
+            <h1>
+               <a href="http://data.unhcr.org/jordan"><img src="images/coordination.png" style="height: 48px; width: 48px"></a>
+               <strong>Jordan Inter-Agency Financial Tracking - 2015</strong>
+            </h1>
+                This Financial Tracking System (FTS) is based on funds received by refugee response partners in Jordan. It only covers the inter-agency appeal for the <b>refugee pillar</b> of the 3RP, in support of the Jordan Response Plan (JRP). The JRP FTS remains the authoritative source for funds pledged and allocated to the Jordan Resilience Plan (JRP) log-frame.
+                For more information, see <a href="http://www.jrpsc.org/financial-tracking/" target="_blank">  http://www.jrpsc.org/financial-tracking/ </a>.
+                You can also consult the <a href="index1.html" target="_blank"> bubble chart version</a>.<br>
+            <h2>
+            <a class="btn btn-default">Total Requested (USD) <a  class="btn btn-primary">$ <span id="totalrequired" class="number-display"></span></a></a>
+            <a class="btn btn-default">Funds Received (USD) <a  class="btn btn-info">$ <span id="totalreceived" class="number-display"></span></a></a>
+            <a class="btn btn-default">Not yet funded (USD) <a  class="btn btn-warning">$ <span id="totalgap" class="number-display"></span></a></a>
+           <!--
+           <a class="btn btn-default">Gap <a  class="btn btn-danger">% <span id="totalpercentage" class="number-display"></span></a></a>
+           -->
+            </h2>
+            <br>
+            <div id="count-info" >
+                 You have selected <strong><span class="filter-count "></span> reports</strong> out of a total of <span class="total-count "></span> reports
+                 <a class="btn btn-primary btn-sm" href="javascript:dc.filterAll();dc.redrawAll();">Click to reset all filters</a>
+            </div>
 
-        <div class="row">
+       </div>
+       <div class="row">
             <div class="col-md-6">
               <div class="row">
 
                 <div class="col-xs-6" data-step="1" data-intro="Click on this pie chart to filter by sector." data-position='right'>
-					<br>
-					<center>
-					<table width=100%>
-						<tr>
-							<td width=70% bgcolor=#EAEAEA><font face="tahoma" size=2px color=#000000> &nbsp; Total Requested (USD) </font></td>
-							<td width=30% bgcolor=#23648C><font face="tahoma" size=2px color=#FFFFFF> &nbsp;875,481,985 </font></td>
-						</tr>
-						<tr>
-							<td colspan=2> </div>
-						</tr>
-						<tr>
-							<td width=70% bgcolor=#EAEAEA><font face="tahoma" size=2px color=#000000> &nbsp; Funds Received (USD) </font></td>
-							<td width=30% bgcolor=#1F77B4><font face="tahoma" size=2px color=#FFFFFF> &nbsp;143,391,386 </font></td>
-						</tr>
-						<tr>
-							<td colspan=2> </div>
-						</tr>
-						<tr>
-							<td width=70% bgcolor=#EAEAEA><font face="tahoma" size=2px color=#000000> &nbsp; Requested- not funded (USD) </font></td>
-							<td width=30% bgcolor=#FF7F0E><font face="tahoma" size=2px color=#FFFFFF> &nbsp;732,090,599 </font></td>
-						</tr>
-					</table>
-					</center><br>
-				<div id="quarter"> <center> <h4>Quarters</h4> </center></div>					
-                </div>				
-				<div id="sector" class="col-xs-6" data-step="1" data-intro="Click on this pie chart to filter by sector." data-position='right'>
+
+                <div id="quarter"> <center> <h4>Quarters</h4> </center></div>
+                </div>
+                <div id="sector" class="col-xs-6" data-step="1" data-intro="Click on this pie chart to filter by sector." data-position='right'>
                   <center> <h4>Received funds across Sectors</h4> </center>
                 </div>
-              </div>			
+              </div>
               <div class="row">
                 <div id="gapReceived" class="col-xs-12" data-step="1" data-intro="Click on this pie chart to filter by sector." data-position='right'>
                   <center> <h4>Distribution of received funds/gap across Sectors</h4> </center>
                 </div>
-			  </div>
+
+              </div>
             </div>
             <div class="col-md-6">
               <div class="row">
@@ -103,51 +90,47 @@
                 </div>
                 <div id="partnergap" class="col-xs-6" data-step="1" data-intro="Click on this pie chart to filter by sector." data-position='right'>
                   <center> <h4>Funding gap per Agency</h4> </center>
-                </div>				
+                </div>
               </div>
-
-            </div>			
-	
-	
-		</div>			
-
-
-
+            </div>
+       </div>
     </div>
-	
-    
+
+    <div width="100%" style="background:#006CA9; height:25px" align=right>
+        <span  class="demoTableRow"><font color="#FFFFFF">
+            Produced by Information Management Unit, UNHCR, Jordan. For more information please contact <a href="http://data.unhcr.org/jordan/team.html" target="_blank" >our team</a> </font>
+         </span> &nbsp;&nbsp;&nbsp;
+    </div>
+
     <script type="text/javascript" src="js/d3_002.js"></script>
     <script type="text/javascript" src="js/crossfilter.js"></script>
     <script type="text/javascript" src="js/dc.js"></script>
     <script type="text/javascript" src="js/d3.tip.min.js"></script>
-
     <script>
 
         $('#dashboard').hide();
-        //var sector_chart = dc.pieChart("#sector");
-		var sector_chart = dc.rowChart("#sector");
-		var quarter_chart = dc.rowChart("#quarter");
-		var partner_chart = dc.rowChart("#partner");		
-		var partnergap_chart = dc.rowChart("#partnergap");
-		var gapReceived_chart = dc.barChart("#gapReceived");
+      //  var gap_chart = dc.pieChart("#gap");
+        var sector_chart = dc.rowChart("#sector");
+        var quarter_chart = dc.rowChart("#quarter");
+        var partner_chart = dc.rowChart("#partner");
+        var partnergap_chart = dc.rowChart("#partnergap");
+        var gapReceived_chart = dc.barChart("#gapReceived");
 
 
         d3.csv("data/fts.csv", function(csv_data){
-
             var numberFormat = d3.format(",f");
             var cf = crossfilter(csv_data);
             var all = cf.groupAll();
-
-
             // Implement bookmarking chart filters status --> Thanks to https://github.com/franckalbinet
             // Serializing filters values in URL
             function getFiltersValues() {
                 var filters = [
+                //    { name: 'gap', value: gap_chart.filters()},
                     { name: 'sector', value: sector_chart.filters()},
                     { name: 'quarter', value: quarter_chart.filters()},
-					{ name: 'partner', value: partner_chart.filters()},
-					{ name: 'partner', value: partnergap_chart.filters()}
-					];
+                    { name: 'partner', value: partner_chart.filters()},
+                    { name: 'partner', value: partnergap_chart.filters()}
+                    ];
 
                 var recursiveEncoded = $.param( filters );
                 location.hash = recursiveEncoded;
@@ -171,9 +154,10 @@
                 }
                 if (parsed) {
                     filter(sector_chart, 1);
-					filter(quarter_chart, 2);
-					filter(partner_chart, 3);
-					filter(partnergap_chart, 4);
+                    filter(quarter_chart, 2);
+                    filter(partner_chart, 3);
+                    filter(partnergap_chart, 4);
+                //    filter(gap_chart, 5);
 
                 }
             }
@@ -197,145 +181,156 @@
                   .html(function (d) { return "<span style='color: #f0027f'>" + d.data.key + "</span> : " + numberFormat(d.y) + " USD";});
 
 
-             /* 3W data are sorted per sector and color are allocated to sectors as per standard code in rrp6 */
+            cf.quarter = cf.dimension(function(d) { return d.Quarter; });
+            var quarterByTotal = cf.quarter.group().reduceSum(function (d) { return d.Receive; });
+            var quarter = cf.quarter.group();
 
-			cf.quarter = cf.dimension(function(d) { return d.Quarter; });
-			var quarterByTotal = cf.quarter.group().reduceSum(function (d) { return d.Receive; });
-			var quarter = cf.quarter.group();
-
-            quarter_chart.width(250).height(140)
+            quarter_chart.width(250).height(200)
                 .dimension(cf.quarter)
                 .group(quarterByTotal)
                 .elasticX(true)
                 .on("filtered", getFiltersValues)
-                .data(function(group) {
-                    return group.top(4);
-                })
+                .data(function(group) { return group.top(4); })
                 .colors(['#3182bd'])
                 .colorDomain([0,0])
                 .colorAccessor(function(d, i){return 1;})
                 .xAxis().ticks(4).tickFormat(d3.format("s"));
-				
 
-			cf.partner = cf.dimension(function(d) { return d.Partner; });			
+
+            cf.sector = cf.dimension(function(d) { return d.Sector; });
+            var sectorByTotal = cf.sector.group().reduceSum(function (d) { return d.Receive; });
+            var sector = cf.sector.group();
+
+            sector_chart.width(250).height(210)
+                .dimension(cf.sector)
+                .group(sectorByTotal)
+                .elasticX(true)
+                .on("filtered", getFiltersValues)
+                .data(function(group) { return group.top(10); })
+                .colors(['#3182bd'])
+                .colorDomain([0,0])
+                .colorAccessor(function(d, i){return 1;})
+                .xAxis().ticks(4).tickFormat(d3.format("s"));
+
+
+            cf.partner = cf.dimension(function(d) { return d.Partner; });
             var partnerByTotal = cf.partner.group().reduceSum(function (d) { return d.Receive; });
             var partner = cf.partner.group();
-				
+
+
             partner_chart.width(250).height(500)
                 .dimension(cf.partner)
                 .group(partnerByTotal)
                 .elasticX(true)
                 .on("filtered", getFiltersValues)
-                .data(function(group) {
-                    return group.top(20);
-                })
+                .data(function(group) { return group.top(20); })
                 .colors(['#3182bd'])
                 .colorDomain([0,0])
                 .colorAccessor(function(d, i){return 1;})
                 .xAxis().ticks(4).tickFormat(d3.format("s"));
-				
-			cf.partnergap = cf.dimension(function(d) { return d.Partner; });			
+
+            cf.partnergap = cf.dimension(function(d) { return d.Partner; });
             var partnergapByTotal = cf.partner.group().reduceSum(function (d) { return (d.Required - d.Receive); });
             var partnergap = cf.partnergap.group();
-				
+
             partnergap_chart.width(250).height(500)
                 .dimension(cf.partnergap)
                 .group(partnergapByTotal)
                 .elasticX(true)
                 .on("filtered", getFiltersValues)
-                .data(function(group) {
-                    return group.top(20);
-                })
+                .data(function(group) { return group.top(20); })
                 .colors(['#3182bd'])
                 .colorDomain([0,0])
                 .colorAccessor(function(d, i){return 1;})
-                .xAxis().ticks(4).tickFormat(d3.format("s"));	
-
-			cf.sector = cf.dimension(function(d) { return d.Sector; });			
-            var sectorByTotal = cf.sector.group().reduceSum(function (d) { return d.Receive; });
-            var sector = cf.sector.group();
-
-            sector_chart.width(250).height(250)
-                .dimension(cf.sector)
-                .group(sectorByTotal)
-                .elasticX(true)
-                .on("filtered", getFiltersValues)
-                .data(function(group) {
-                    return group.top(10);
-                })
-                .colors(['#3182bd'])
-                .colorDomain([0,0])
-                .colorAccessor(function(d, i){return 1;})
-                .xAxis().ticks(4).tickFormat(d3.format("s"));			
+                .xAxis().ticks(4).tickFormat(d3.format("s"));
 
 
-				
-			cf.sectorGroup = cf.dimension(function(d) { return d.Sector; });						
-			cf.gapReceived = cf.dimension(function(d) { return d.Receive; });			
-			var gapByTotal = cf.sectorGroup.group().reduceSum(function (d) { return (d.Required - d.Receive); });
-			var receiveByTotal = cf.sectorGroup.group().reduceSum(function (d) { return d.Receive; });
+            cf.sectorGroup = cf.dimension(function(d) { return d.Sector; });
+            cf.gapReceived = cf.dimension(function(d) { return d.Receive; });
+            var gapByTotal = cf.sectorGroup.group().reduceSum(function (d) { return (d.Required - d.Receive); });
+            var receiveByTotal = cf.sectorGroup.group().reduceSum(function (d) { return d.Receive; });
             //var gapReceivedByTotal = cf.partner.group().reduceSum(function (d) { return (d.Required - d.Receive); });
-			var sectors = ["Basic Needs","Education","Food","Health","Protection","Sector","Shelter","WASH"];
+            var sectors = ["Basic Needs","Education","Food","Health","Protection","Sector","Shelter","WASH"];
             var gapReceived = cf.gapReceived.group();
-			var sectorGroup = cf.sectorGroup.group();
+            var sectorGroup = cf.sectorGroup.group();
 
-				gapReceived_chart.width(500).height(220)
-					.margins({top: 50, right: 20, left: 75, bottom: 50})
-					.dimension(sectorGroup)
-					.group(receiveByTotal,"Funding Received")
-					.stack(gapByTotal,"Funding Gap")
-					.x(d3.scale.ordinal().domain(sectorGroup))
-					.xUnits(dc.units.ordinal)					
-					.renderHorizontalGridLines(true)
-					.barPadding(0.2)
-					.outerPadding(0.05)					
-					.elasticY(true)
-					.brushOn(false)
-					//.renderlet(colorRenderlet)
-					.legend(dc.legend().x(375).y(10).itemHeight(15).gap(1))
-					
-				;
-
-
-		
+            gapReceived_chart.width(500).height(240)
+                .margins({top: 50, right: 20, left: 75, bottom: 50})
+                .dimension(sectorGroup)
+                .group(receiveByTotal,"Funding Received")
+                .stack(gapByTotal,"Funding Gap")
+                .x(d3.scale.ordinal().domain(sectorGroup))
+                .xUnits(dc.units.ordinal)
+                .renderHorizontalGridLines(true)
+                .barPadding(0.2)
+                .outerPadding(0.05)
+                .elasticY(true)
+                .brushOn(false)
+                //.renderlet(colorRenderlet)
+                .legend(dc.legend().x(375).y(10).itemHeight(15).gap(1));
 
             dc.dataCount("#count-info")
-            .dimension(cf)
-            .group(all);
+                .dimension(cf)
+                .group(all);
+
+            var byRequired = cf.dimension(function(d) { return d.Required; });
+            var byRequiredGroup = byRequired.groupAll().reduceSum(function (d) { return d.Required; });
+            dc.numberDisplay("#totalrequired")
+                   .valueAccessor(function(d){return +d})
+                    .group(byRequiredGroup);
+
+            var byReceived = cf.dimension(function(d) { return d.Receive; });
+            var byReceivedGroup = byReceived.groupAll().reduceSum(function (d) { return d.Receive; });
+            dc.numberDisplay("#totalreceived")
+                   .valueAccessor(function(d){return +d})
+                    .group(byReceivedGroup);
+
+            var byGap = cf.dimension(function(d) { return d.Gap; });
+            var byGapGroup = byGap.groupAll().reduceSum(function (d) { return d.Gap; });
+            dc.numberDisplay("#totalgap")
+                   .valueAccessor(function(d){return +d})
+                    .group(byGapGroup);
+
+          // var byPercentage = cf.dimension(function(d) { return d.Percentage; });
+          // var byPercentageGroup = byPercentage.groupAll().reduceSum(function (d) { return d.Percentage; });
+            var byPercentage = cf.dimension(function (d) { return (d.Gap / d.Required);});
+            var byPercentageGroup = byPercentage.groupAll().reduceSum(function (d) { return (d.Gap / d.Required);});
+            dc.numberDisplay("#totalpercentage")
+                   .valueAccessor(function(d){return +d})
+                    .group(byPercentageGroup);
 
 
+            $('#loading').hide();
+            $('#dashboard').show();
+            dc.renderAll();
 
+            /* Customised infobox */
+            d3.selectAll("g.row").call(rowTip);
+            d3.selectAll("g.row").on('mouseover', rowTip.show).on('mouseout', rowTip.hide);
 
-                            $('#loading').hide();
-                            $('#dashboard').show();
-                            dc.renderAll();
+            var stackChart = 'div#gapReceived.dc-chart rect';
+            d3.selectAll(stackChart).call(barTip);
+            d3.selectAll(stackChart).on('mouseover', barTip.show).on('mouseout', barTip.hide);
 
-                            /* Customised infobox */
-                            d3.selectAll("g.row").call(rowTip);
-                            d3.selectAll("g.row").on('mouseover', rowTip.show)
-                                .on('mouseout', rowTip.hide);
-								
-							var stackChart = 'div#gapReceived.dc-chart rect';
-							d3.selectAll(stackChart).call(barTip);
-							d3.selectAll(stackChart).on('mouseover', barTip.show)
-														   .on('mouseout', barTip.hide);
-									});
-    
-	</script>
+            }
+            );
+
+    </script>
     <script src="js/bootstrap.js"></script>
-    <!-- Piwik-->
-    <script type="text/javascript">
-    var pkBaseURL = (("https:" == document.location.protocol) ? "https://data.unhcr.org/piwik/" : "http://data.unhcr.org/piwik/");
-    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-    </script><script type="text/javascript">
-    try {
-    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 21);
-    piwikTracker.trackPageView();
-    piwikTracker.enableLinkTracking();
-    } catch( err ) {}
-    </script><noscript><p><img src="http://data.unhcr.org/piwik/piwik.php?idsite=21" style="border:0" alt="" /></p></noscript>
-    <!-- End Piwik Tracking Code -->
-	
-    <div width="100%" style="background:#006CA9; height:25px" align=right><SPAN  class="demoTableRow"><font color="#FFFFFF">  Produced by Information Management Unit, UNHCR, Jordan. For more information please contact <a href="http://data.unhcr.org/jordan/team.html" target="_blank" >our team</a> </font> </SPAN> &nbsp;&nbsp;&nbsp;</div>
+
+      <!-- Piwik -->
+        <script type="text/javascript">
+        var pkBaseURL = (("https:" == document.location.protocol) ? "https://data.unhcr.org/piwik/" : "http://data.unhcr.org/piwik/");
+        document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+        </script><script type="text/javascript">
+        try {
+        var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 14);
+        piwikTracker.trackPageView();
+        piwikTracker.enableLinkTracking();
+        } catch( err ) {}
+        </script><noscript><p><img src="http://data.unhcr.org/piwik/piwik.php?idsite=14" style="border:0" alt="" /></p></noscript>
+      <!-- End Piwik Tracking Code -->
+
+
   </body>
 </html>
