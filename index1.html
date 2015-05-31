@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <meta name="author" content="Edouard Legoupil">
+    <meta property="og:title" content="2014 Refugee Response in Jordan">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://data.unhcr.org/jordan/fts">
+    <meta property="og:image" content="http://data.unhcr.org/jordan/fts/thumbnail.jpg">
+    <meta property="og:site_name" content="2014 Refugee Response in Jordan">
+    <meta property="og:description" content="2014 Refugee Response in Jordan">
+    
+    <link href="http://www.unhcr.org/favicon.ico" rel="icon" type="image/x-icon">
+    
+    <title>FTS: Refugee Response Plan in Jordan</title>
+    <script type="text/javascript" src="lib/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.history.js"></script>
+    <script type="text/javascript" src="lib/raphael-min.js"></script>
+    <script type="text/javascript" src="lib/vis4.js"></script>
+    <script type="text/javascript" src="lib/Tween.js"></script>
+    <script type="text/javascript" src="build/bubbletree.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="build/bubbletree.css" />
+ 
+   <script type="text/javascript">
+        $(function() {
+            new BubbleTree({
+                data: data,
+                container: '.bubbletree',
+                bubbleType: 'icon',
+                bubbleStyles: {
+                    'rrp': { //taxonomy
+                        'rrp': {
+                            icon: 'icons/refugee.svg'
+                        },
+                        'gap': {
+                            color: '#E7302A', //color of the bubble for the sector
+                        },
+                        'participating': {
+                            color: '#3B5998', //color of the bubble for the sector
+                        },						
+                        'requested': {
+                            color: '#3B5998', //color of the bubble for the sector
+                        },
+                        'reported': {
+                            color: '#3B5998', //color of the bubble for the sector
+                        },
+                        'notreported': {
+                            color: '#3B5998', //color of the bubble for the sector
+                        },						
+                        'received': {
+                            color: '#30E72A', //color of the bubble for the sector
+                        },						
+                        'basicneeds': {
+                            color: '#a48658', //color of the bubble for the sector
+                            icon: 'icons/basicneeds.svg'
+                        },
+                        'education': { //name of the node/child
+                            color: '#c00000', //color of the bubble for the sector
+                            icon: 'icons/education.svg' //icon url
+                        },
+                        'food': {
+                            color: '#006600', //color of the bubble for the sector
+                            icon: 'icons/food.svg'
+                        },
+                        'health': {
+                            color: '#08a1d9', //color of the bubble for the sector
+                            icon: 'icons/health.svg'
+                        },
+                        'nfi': {
+                            color: '#f96a1b', //color of the bubble for the sector
+                            icon: 'icons/nfi.svg'
+                        },
+                        'protection': {
+                            color: '#1f497d', //color of the bubble for the sector
+                            icon: 'icons/protection.svg'
+                        },
+                        'shelter': {
+                            color: '#989aac', //color of the bubble for the sector
+                            icon: 'icons/shelter.svg'
+                        },
+                        'wash': {
+                            color: '#7030a0', //color of the bubble for the sector
+                            icon: 'icons/wash.svg'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+            var data = {
+                taxonomy:'rrp',
+                name: 'refugee',
+                label: 'Total Funds Requested',
+                amount:  875481985,
+                color: '#585858', // color for root node, will be inherited by children
+				children: [
+					{ taxonomy:'rrp', name:'gap', label: 'Gap (84%)', amount:  732090599,
+						children: [
+							{taxonomy:'rrp',name:'basicneeds', label:'BASIC Needs (86%)',amount:150496110,
+								children: [
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:88861959},
+									{taxonomy:'rrp',name:'UNICEF', label:'UNICEF',amount:24952720.51},
+									{taxonomy:'rrp',name:'NRC', label:'NRC',amount:4917778},
+									{taxonomy:'rrp',name:'SCI', label:'SCI',amount:3818166},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:5845690},
+									{taxonomy:'rrp',name:'NEF', label:'NEF',amount:5520000},
+									{taxonomy:'rrp',name:'ACF', label:'ACF',amount:3623234},
+									{taxonomy:'rrp',name:'OXFAM', label:'OXFAM',amount:3304445},
+									{taxonomy:'rrp',name:'IRC', label:'IRC',amount:1230145.31466667},
+									{taxonomy:'rrp',name:'JHAS', label:'JHAS',amount:1784640},
+									{taxonomy:'rrp',name:'MEDAIR', label:'MEDAIR',amount:1468883},
+									{taxonomy:'rrp',name:'HI', label:'HI',amount:499650},
+									{taxonomy:'rrp',name:'LWF', label:'LWF',amount:938000},
+									{taxonomy:'rrp',name:'ICMC', label:'ICMC',amount:818321},
+									{taxonomy:'rrp',name:'CARE', label:'CARE',amount:-918024},
+									{taxonomy:'rrp',name:'PU-AMI', label:'PU-AMI',amount:801626},
+									{taxonomy:'rrp',name:'WVI', label:'WVI',amount:820000},
+									{taxonomy:'rrp',name:'AVSI', label:'AVSI',amount:790000},
+									{taxonomy:'rrp',name:'Intersos', label:'Intersos',amount:777000},
+									{taxonomy:'rrp',name:'ActionAid', label:'ActionAid',amount:354656},
+									{taxonomy:'rrp',name:'NICCOD', label:'NICCOD',amount:-12779},
+									{taxonomy:'rrp',name:'JEN', label:'JEN',amount:300000}
+								]
+								
+							 },
+							 { taxonomy:'rrp', name:'education', label: 'EDUCATION (75%)', amount: 60327820,
+								children: [
+									{taxonomy:'rrp',name:'UNICEF', label:'UNICEF',amount:37154346.0316953},
+									{taxonomy:'rrp',name:'SCI', label:'SCI',amount:2495090},
+									{taxonomy:'rrp',name:'NRC', label:'NRC',amount:644789},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:3334634.97},
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:3006590},
+									{taxonomy:'rrp',name:'FCA', label:'FCA',amount:2269760},
+									{taxonomy:'rrp',name:'UNESCO', label:'UNESCO',amount:2350000},
+									{taxonomy:'rrp',name:'IR', label:'IR',amount:2276730},
+									{taxonomy:'rrp',name:'WVI', label:'WVI',amount:1410082.66},
+									{taxonomy:'rrp',name:'RI', label:'RI',amount:1000000},
+									{taxonomy:'rrp',name:'LWF', label:'LWF',amount:398000},
+									{taxonomy:'rrp',name:'Intersos', label:'Intersos',amount:732000},
+									{taxonomy:'rrp',name:'WarChild UK', label:'WarChild UK',amount:535000},
+									{taxonomy:'rrp',name:'DRC', label:'DRC',amount:562358},
+									{taxonomy:'rrp',name:'JEN', label:'JEN',amount:115520},
+									{taxonomy:'rrp',name:'FPSC', label:'FPSC',amount:500000},
+									{taxonomy:'rrp',name:'KnK', label:'KnK',amount:-426952},
+									{taxonomy:'rrp',name:'ICSC', label:'ICSC',amount:449995},
+									{taxonomy:'rrp',name:'Questcope', label:'Questcope',amount:270700},
+									{taxonomy:'rrp',name:'OXFAM', label:'OXFAM',amount:270000},
+									{taxonomy:'rrp',name:'ActionAid', label:'ActionAid',amount:197634},
+									{taxonomy:'rrp',name:'ACTED', label:'ACTED',amount:225000},
+									{taxonomy:'rrp',name:'AVSI', label:'AVSI',amount:207500},
+									{taxonomy:'rrp',name:'ICMC', label:'ICMC',amount:180043},
+									{taxonomy:'rrp',name:'MECI', label:'MECI',amount:169000}
+								]
+								
+							 },
+							{ taxonomy:'rrp', name:'food', label: 'FOOD (84%)', amount: 38061830,
+
+								children: [
+									{taxonomy:'rrp',name:'WFP', label:'WFP',amount:195651591},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:1355932},
+									{taxonomy:'rrp',name:'FAO', label:'FAO',amount:350000},
+									{taxonomy:'rrp',name:'WVI', label:'WVI',amount:508314.46},
+									{taxonomy:'rrp',name:'ACTED', label:'ACTED',amount:235900},
+									{taxonomy:'rrp',name:'FPSC', label:'FPSC',amount:150000},
+									{taxonomy:'rrp',name:'IR', label:'IR',amount:37836.18},
+									{taxonomy:'rrp',name:'UNFPA', label:'UNFPA',amount:28000},
+									{taxonomy:'rrp',name:'Un Women', label:'Un Women',amount:25000}
+								]
+								
+							 },
+							{ taxonomy:'rrp', name:'health', label: 'HEALTH (80%)', amount: 43367772,
+
+								children: [
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:15267339},
+									{taxonomy:'rrp',name:'UNICEF', label:'UNICEF',amount:5751916.08160923},
+									{taxonomy:'rrp',name:'UNFPA', label:'UNFPA',amount:4425230},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:3846200},
+									{taxonomy:'rrp',name:'CVT', label:'CVT',amount:3600000},
+									{taxonomy:'rrp',name:'HI', label:'HI',amount:1796801},
+									{taxonomy:'rrp',name:'QRC', label:'QRC',amount:3360000},
+									{taxonomy:'rrp',name:'IRC', label:'IRC',amount:-613478.35065},
+									{taxonomy:'rrp',name:'JHAS', label:'JHAS',amount:1569000},
+									{taxonomy:'rrp',name:'WHO', label:'WHO',amount:1200000},
+									{taxonomy:'rrp',name:'IOM', label:'IOM',amount:718671},
+									{taxonomy:'rrp',name:'IMC', label:'IMC',amount:1062003},
+									{taxonomy:'rrp',name:'IRD', label:'IRD',amount:691091},
+									{taxonomy:'rrp',name:'MEDAIR', label:'MEDAIR',amount:660151.3},
+									{taxonomy:'rrp',name:'NICCOD', label:'NICCOD',amount:-57152},
+									{taxonomy:'rrp',name:'PU-AMI', label:'PU-AMI',amount:90000}
+								]
+								
+							 },
+							{ taxonomy:'rrp', name:'protection', label: 'PROTECTION (87%)', amount: 115765403,
+
+								children: [
+								
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:57390496},
+									{taxonomy:'rrp',name:'UNICEF', label:'UNICEF',amount:19388690.0756449},
+									{taxonomy:'rrp',name:'UNFPA', label:'UNFPA',amount:7176620},
+									{taxonomy:'rrp',name:'IOM', label:'IOM',amount:4750000},
+									{taxonomy:'rrp',name:'Mercy Corps', label:'Mercy Corps',amount:4700000},
+									{taxonomy:'rrp',name:'DRC', label:'DRC',amount:3781664},
+									{taxonomy:'rrp',name:'CARE', label:'CARE',amount:2220240},
+									{taxonomy:'rrp',name:'UNOPS', label:'UNOPS',amount:2000000},
+									{taxonomy:'rrp',name:'Intersos', label:'Intersos',amount:-76983},
+									{taxonomy:'rrp',name:'IMC', label:'IMC',amount:1743401},
+									{taxonomy:'rrp',name:'JHAS', label:'JHAS',amount:1700000},
+									{taxonomy:'rrp',name:'FPSC', label:'FPSC',amount:1607574},
+									{taxonomy:'rrp',name:'ICSC', label:'ICSC',amount:1500000},
+									{taxonomy:'rrp',name:'ACTED', label:'ACTED',amount:1325500},
+									{taxonomy:'rrp',name:'Questcope', label:'Questcope',amount:1180766.56},
+									{taxonomy:'rrp',name:'SCI', label:'SCI',amount:-1839026},
+									{taxonomy:'rrp',name:'ActionAid', label:'ActionAid',amount:1016187},
+									{taxonomy:'rrp',name:'Un Women', label:'Un Women',amount:419000},
+									{taxonomy:'rrp',name:'HI', label:'HI',amount:559417},
+									{taxonomy:'rrp',name:'WarChild UK', label:'WarChild UK',amount:814100},
+									{taxonomy:'rrp',name:'TDH', label:'TDH',amount:79742},
+									{taxonomy:'rrp',name:'ILO', label:'ILO',amount:700000},
+									{taxonomy:'rrp',name:'LWF', label:'LWF',amount:644700},
+									{taxonomy:'rrp',name:'SC Jordan', label:'SC Jordan',amount:600276},
+									{taxonomy:'rrp',name:'ACF', label:'ACF',amount:571600},
+									{taxonomy:'rrp',name:'IRC', label:'IRC',amount:-495507.288090741},
+									{taxonomy:'rrp',name:'OXFAM', label:'OXFAM',amount:412626},
+									{taxonomy:'rrp',name:'ICMC', label:'ICMC',amount:241862.1},
+									{taxonomy:'rrp',name:'NICCOD', label:'NICCOD',amount:34879},
+									{taxonomy:'rrp',name:'WVI', label:'WVI',amount:400600},
+									{taxonomy:'rrp',name:'MPDL', label:'MPDL',amount:215814},
+									{taxonomy:'rrp',name:'UPP', label:'UPP',amount:374910},
+									{taxonomy:'rrp',name:'PU-AMI', label:'PU-AMI',amount:272508},
+									{taxonomy:'rrp',name:'NRC', label:'NRC',amount:0},
+									{taxonomy:'rrp',name:'APS', label:'APS',amount:154420},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:138330.94},
+									{taxonomy:'rrp',name:'MEDAIR', label:'MEDAIR',amount:60996}
+								]
+								
+							 },
+							{ taxonomy:'rrp', name:'shelter', label: 'SHELTER (91%)', amount: 108303274,
+
+								children: [			
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:92301989},
+									{taxonomy:'rrp',name:'NRC', label:'NRC',amount:2025975},
+									{taxonomy:'rrp',name:'KfW', label:'KfW',amount:3000000},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:2699680},
+									{taxonomy:'rrp',name:'PU-AMI', label:'PU-AMI',amount:1855887},
+									{taxonomy:'rrp',name:'MEDAIR', label:'MEDAIR',amount:2001182},
+									{taxonomy:'rrp',name:'IR', label:'IR',amount:1370233},
+									{taxonomy:'rrp',name:'ACTED', label:'ACTED',amount:1050000},
+									{taxonomy:'rrp',name:'Intersos', label:'Intersos',amount:845000},
+									{taxonomy:'rrp',name:'LWF', label:'LWF',amount:800000},
+									{taxonomy:'rrp',name:'ICMC', label:'ICMC',amount:145328.7},
+									{taxonomy:'rrp',name:'JHAS', label:'JHAS',amount:208000}
+
+								]
+								
+							 },
+							{ taxonomy:'rrp', name:'wash', label: 'WASH (71%)', amount: 55487643,
+
+								children: [
+									{taxonomy:'rrp',name:'UNICEF', label:'UNICEF',amount:23781782.0710505},
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:9895847.00312151},
+									{taxonomy:'rrp',name:'OXFAM', label:'OXFAM',amount:8456906},
+									{taxonomy:'rrp',name:'Mercy Corps', label:'Mercy Corps',amount:5000000},
+									{taxonomy:'rrp',name:'ACTED', label:'ACTED',amount:3761000},
+									{taxonomy:'rrp',name:'RI', label:'RI',amount:1687500},
+									{taxonomy:'rrp',name:'WVI', label:'WVI',amount:1310000},
+									{taxonomy:'rrp',name:'IRD', label:'IRD',amount:1190000},
+									{taxonomy:'rrp',name:'JEN', label:'JEN',amount:-237495},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:532635},
+									{taxonomy:'rrp',name:'ICMC', label:'ICMC',amount:203794.6},
+									{taxonomy:'rrp',name:'DRC', label:'DRC',amount:230000},
+									{taxonomy:'rrp',name:'NICCOD', label:'NICCOD',amount:-214512},
+									{taxonomy:'rrp',name:'LWF', label:'LWF',amount:-11000},
+									{taxonomy:'rrp',name:'ACF', label:'ACF',amount:-98814}
+
+								]
+								
+							 }	
+						]					
+					},								
+                    { taxonomy:'rrp', name:'received', label: 'Funds Received (16%)', amount: 143391386,				
+					
+						children: [
+							{taxonomy:'rrp',name:'basicneeds', label:'BASIC Needs (14%)',amount:24606771,
+								children: [
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:8989472},
+									{taxonomy:'rrp',name:'UNICEF', label:'UNICEF',amount:6547279.49},
+									{taxonomy:'rrp',name:'NRC', label:'NRC',amount:1082222},
+									{taxonomy:'rrp',name:'SCI', label:'SCI',amount:2121834},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:0},
+									{taxonomy:'rrp',name:'NEF', label:'NEF',amount:0},
+									{taxonomy:'rrp',name:'ACF', label:'ACF',amount:249366},
+									{taxonomy:'rrp',name:'OXFAM', label:'OXFAM',amount:0},
+									{taxonomy:'rrp',name:'IRC', label:'IRC',amount:744418.685333333},
+									{taxonomy:'rrp',name:'JHAS', label:'JHAS',amount:0},
+									{taxonomy:'rrp',name:'MEDAIR', label:'MEDAIR',amount:259041},
+									{taxonomy:'rrp',name:'HI', label:'HI',amount:994350},
+									{taxonomy:'rrp',name:'LWF', label:'LWF',amount:362000},
+									{taxonomy:'rrp',name:'ICMC', label:'ICMC',amount:373311},
+									{taxonomy:'rrp',name:'CARE', label:'CARE',amount:2000000},
+									{taxonomy:'rrp',name:'PU-AMI', label:'PU-AMI',amount:270874},
+									{taxonomy:'rrp',name:'WVI', label:'WVI',amount:0},
+									{taxonomy:'rrp',name:'AVSI', label:'AVSI',amount:0},
+									{taxonomy:'rrp',name:'Intersos', label:'Intersos',amount:0},
+									{taxonomy:'rrp',name:'ActionAid', label:'ActionAid',amount:245624},
+									{taxonomy:'rrp',name:'NICCOD', label:'NICCOD',amount:366979},
+									{taxonomy:'rrp',name:'JEN', label:'JEN',amount:0}
+
+								]
+								
+							 },
+							 { taxonomy:'rrp', name:'education', label: 'EDUCATION (25%)', amount: 20229949,
+
+								children: [
+									{taxonomy:'rrp',name:'UNICEF', label:'UNICEF',amount:5200153.96830469},
+									{taxonomy:'rrp',name:'SCI', label:'SCI',amount:8918648},
+									{taxonomy:'rrp',name:'NRC', label:'NRC',amount:3174211},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:0},
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:91497},
+									{taxonomy:'rrp',name:'FCA', label:'FCA',amount:500000},
+									{taxonomy:'rrp',name:'UNESCO', label:'UNESCO',amount:0},
+									{taxonomy:'rrp',name:'IR', label:'IR',amount:0},
+									{taxonomy:'rrp',name:'WVI', label:'WVI',amount:539917.34},
+									{taxonomy:'rrp',name:'RI', label:'RI',amount:0},
+									{taxonomy:'rrp',name:'LWF', label:'LWF',amount:342000},
+									{taxonomy:'rrp',name:'Intersos', label:'Intersos',amount:0},
+									{taxonomy:'rrp',name:'WarChild UK', label:'WarChild UK',amount:110000},
+									{taxonomy:'rrp',name:'DRC', label:'DRC',amount:0},
+									{taxonomy:'rrp',name:'JEN', label:'JEN',amount:384980},
+									{taxonomy:'rrp',name:'FPSC', label:'FPSC',amount:0},
+									{taxonomy:'rrp',name:'KnK', label:'KnK',amount:881352},
+									{taxonomy:'rrp',name:'ICSC', label:'ICSC',amount:0},
+									{taxonomy:'rrp',name:'Questcope', label:'Questcope',amount:0},
+									{taxonomy:'rrp',name:'OXFAM', label:'OXFAM',amount:0},
+									{taxonomy:'rrp',name:'ActionAid', label:'ActionAid',amount:71566},
+									{taxonomy:'rrp',name:'ACTED', label:'ACTED',amount:0},
+									{taxonomy:'rrp',name:'AVSI', label:'AVSI',amount:0},
+									{taxonomy:'rrp',name:'ICMC', label:'ICMC',amount:15624},
+									{taxonomy:'rrp',name:'MECI', label:'MECI',amount:0}
+								]
+								
+							 },
+							{ taxonomy:'rrp', name:'food', label: 'FOOD (16%)', amount: 38061830,
+
+								children: [
+									{taxonomy:'rrp',name:'WFP', label:'WFP',amount:36820149},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:0},
+									{taxonomy:'rrp',name:'FAO', label:'FAO',amount:950000},
+									{taxonomy:'rrp',name:'WVI', label:'WVI',amount:291681.54},
+									{taxonomy:'rrp',name:'ACTED', label:'ACTED',amount:0},
+									{taxonomy:'rrp',name:'FPSC', label:'FPSC',amount:0},
+									{taxonomy:'rrp',name:'IR', label:'IR',amount:0},
+									{taxonomy:'rrp',name:'UNFPA', label:'UNFPA',amount:0},
+									{taxonomy:'rrp',name:'Un Women', label:'Un Women',amount:0}
+
+								]
+								
+							 },
+							{ taxonomy:'rrp', name:'health', label: 'HEALTH (20%)', amount: 11121674,
+							
+								children: [
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:4299087},
+									{taxonomy:'rrp',name:'UNICEF', label:'UNICEF',amount:958083.918390771},
+									{taxonomy:'rrp',name:'UNFPA', label:'UNFPA',amount:0},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:0},
+									{taxonomy:'rrp',name:'CVT', label:'CVT',amount:0},
+									{taxonomy:'rrp',name:'HI', label:'HI',amount:1802199},
+									{taxonomy:'rrp',name:'QRC', label:'QRC',amount:0},
+									{taxonomy:'rrp',name:'IRC', label:'IRC',amount:3092708.35065},
+									{taxonomy:'rrp',name:'JHAS', label:'JHAS',amount:0},
+									{taxonomy:'rrp',name:'WHO', label:'WHO',amount:0},
+									{taxonomy:'rrp',name:'IOM', label:'IOM',amount:414935},
+									{taxonomy:'rrp',name:'IMC', label:'IMC',amount:0},
+									{taxonomy:'rrp',name:'IRD', label:'IRD',amount:316909},
+									{taxonomy:'rrp',name:'MEDAIR', label:'MEDAIR',amount:0},
+									{taxonomy:'rrp',name:'NICCOD', label:'NICCOD',amount:237752},
+									{taxonomy:'rrp',name:'PU-AMI', label:'PU-AMI',amount:0}
+								]
+								
+							 },
+							{ taxonomy:'rrp', name:'protection', label: 'PROTECTION (13%)', amount: 16827781,
+
+								children: [
+								
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:5530193},
+									{taxonomy:'rrp',name:'UNICEF', label:'UNICEF',amount:656541.924355063},
+									{taxonomy:'rrp',name:'UNFPA', label:'UNFPA',amount:0},
+									{taxonomy:'rrp',name:'IOM', label:'IOM',amount:0},
+									{taxonomy:'rrp',name:'Mercy Corps', label:'Mercy Corps',amount:0},
+									{taxonomy:'rrp',name:'DRC', label:'DRC',amount:680392},
+									{taxonomy:'rrp',name:'CARE', label:'CARE',amount:800000},
+									{taxonomy:'rrp',name:'UNOPS', label:'UNOPS',amount:0},
+									{taxonomy:'rrp',name:'Intersos', label:'Intersos',amount:1860583},
+									{taxonomy:'rrp',name:'IMC', label:'IMC',amount:0},
+									{taxonomy:'rrp',name:'JHAS', label:'JHAS',amount:0},
+									{taxonomy:'rrp',name:'FPSC', label:'FPSC',amount:57242},
+									{taxonomy:'rrp',name:'ICSC', label:'ICSC',amount:0},
+									{taxonomy:'rrp',name:'ACTED', label:'ACTED',amount:0},
+									{taxonomy:'rrp',name:'Questcope', label:'Questcope',amount:49233.44},
+									{taxonomy:'rrp',name:'SCI', label:'SCI',amount:3037340},
+									{taxonomy:'rrp',name:'ActionAid', label:'ActionAid',amount:141163},
+									{taxonomy:'rrp',name:'Un Women', label:'Un Women',amount:600000},
+									{taxonomy:'rrp',name:'HI', label:'HI',amount:340583},
+									{taxonomy:'rrp',name:'WarChild UK', label:'WarChild UK',amount:0},
+									{taxonomy:'rrp',name:'TDH', label:'TDH',amount:680173},
+									{taxonomy:'rrp',name:'ILO', label:'ILO',amount:0},
+									{taxonomy:'rrp',name:'LWF', label:'LWF',amount:300},
+									{taxonomy:'rrp',name:'SC Jordan', label:'SC Jordan',amount:0},
+									{taxonomy:'rrp',name:'ACF', label:'ACF',amount:0},
+									{taxonomy:'rrp',name:'IRC', label:'IRC',amount:1041832.28809074},
+									{taxonomy:'rrp',name:'OXFAM', label:'OXFAM',amount:121374},
+									{taxonomy:'rrp',name:'ICMC', label:'ICMC',amount:268384},
+									{taxonomy:'rrp',name:'NICCOD', label:'NICCOD',amount:392521},
+									{taxonomy:'rrp',name:'WVI', label:'WVI',amount:0},
+									{taxonomy:'rrp',name:'MPDL', label:'MPDL',amount:174186},
+									{taxonomy:'rrp',name:'UPP', label:'UPP',amount:0},
+									{taxonomy:'rrp',name:'PU-AMI', label:'PU-AMI',amount:95740},
+									{taxonomy:'rrp',name:'NRC', label:'NRC',amount:300000},
+									{taxonomy:'rrp',name:'APS', label:'APS',amount:0},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:0},
+									{taxonomy:'rrp',name:'MEDAIR', label:'MEDAIR',amount:0}
+
+								]
+								
+							 },
+							{ taxonomy:'rrp', name:'shelter', label: 'SHELTER (9%)', amount: 10253444,
+
+								children: [			
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:2860250},
+									{taxonomy:'rrp',name:'NRC', label:'NRC',amount:6859425},
+									{taxonomy:'rrp',name:'KfW', label:'KfW',amount:0},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:0},
+									{taxonomy:'rrp',name:'PU-AMI', label:'PU-AMI',amount:172887},
+									{taxonomy:'rrp',name:'MEDAIR', label:'MEDAIR',amount:0},
+									{taxonomy:'rrp',name:'IR', label:'IR',amount:0},
+									{taxonomy:'rrp',name:'ACTED', label:'ACTED',amount:0},
+									{taxonomy:'rrp',name:'Intersos', label:'Intersos',amount:0},
+									{taxonomy:'rrp',name:'LWF', label:'LWF',amount:0},
+									{taxonomy:'rrp',name:'ICMC', label:'ICMC',amount:360882},
+									{taxonomy:'rrp',name:'JHAS', label:'JHAS',amount:0},
+
+								]
+								
+							 },
+							{ taxonomy:'rrp', name:'wash', label: 'WASH (29%)', amount: 22289934,
+
+								children: [
+									{taxonomy:'rrp',name:'UNICEF', label:'UNICEF',amount:19568217.9289495},
+									{taxonomy:'rrp',name:'UNHCR', label:'UNHCR',amount:301151},
+									{taxonomy:'rrp',name:'OXFAM', label:'OXFAM',amount:997750},
+									{taxonomy:'rrp',name:'Mercy Corps', label:'Mercy Corps',amount:0},
+									{taxonomy:'rrp',name:'ACTED', label:'ACTED',amount:0},
+									{taxonomy:'rrp',name:'RI', label:'RI',amount:0},
+									{taxonomy:'rrp',name:'WVI', label:'WVI',amount:0},
+									{taxonomy:'rrp',name:'IRD', label:'IRD',amount:0},
+									{taxonomy:'rrp',name:'JEN', label:'JEN',amount:890693},
+									{taxonomy:'rrp',name:'Caritas', label:'Caritas',amount:0},
+									{taxonomy:'rrp',name:'ICMC', label:'ICMC',amount:153697},
+									{taxonomy:'rrp',name:'DRC', label:'DRC',amount:0},
+									{taxonomy:'rrp',name:'NICCOD', label:'NICCOD',amount:253612},
+									{taxonomy:'rrp',name:'LWF', label:'LWF',amount:26000},
+									{taxonomy:'rrp',name:'ACF', label:'ACF',amount:98814}
+								]
+								
+							 }	
+						]
+						}]
+            }
+    </script>
+
+
+</head>
+<body>
+    <div id="header">
+<table width=100% cellspacing=1 cellpadding=1>
+	<tr>
+		<td bgcolor=#3B5998>&nbsp; <font color=#FFFFFF> Participating Agencies </font></td>
+		<td bgcolor=#3B5998> &nbsp; <font color=#FFFFFF>53 </font></td>
+	</tr>
+	<tr>
+		<td bgcolor=#5B79D8> &nbsp;Reported </td>
+		<td bgcolor=#5B79D8> &nbsp;41</td>
+	</tr>
+	<tr>
+		<td bgcolor=#5B79D8> &nbsp;Not Reported </td>
+		<td bgcolor=#5B79D8> &nbsp;12 </td>
+	</tr>
+</table>
+<br>
+<table width=100% cellspacing=1 cellpadding=1>
+	<tr>
+		<td bgcolor=#3B5998>&nbsp; <font color=#FFFFFF>Agencies without funding</font></td>
+		<td bgcolor=#3B5998>&nbsp;<font color=#FFFFFF>10</font></td>
+	</tr>
+	<tr>
+		<td bgcolor=#5B79D8> &nbsp;NGO </td>
+		<td bgcolor=#5B79D8> &nbsp;8 </td>
+	</tr>
+	<tr>
+		<td bgcolor=#5B79D8> &nbsp;UN </td>
+		<td bgcolor=#5B79D8> &nbsp;2 </td>
+	</tr>
+</table>
+<br>
+	<a class="title"><a  
+        href="http://data.unhcr.org/jordan"><img 
+        src="images/coordination.png" style="height: 48px; width: 48px"></a> 2015 Inter-Agency Financial Tracking - ( Jan - Mar 2015 )</a>
+        <div class="subtitle">Where does the money go?</div>
+        <div class="subtitle"><i>Explore Financial Tracking Information (<b>in USD</b>)</i>. <br >
+        <b>Disclaimer:</b> <strong>%</strong> refers to the <a href="http://data.unhcr.org/jordan/">covered budget requirement</a>. The above includes information reported by partners at the Jordan level. Regional and other un-earmarked contributions, not yet reflected here, may also benefit the 3RP plan in Jordan. <br >
+        <b>Credits:</b> Thanks to agencies and organisation who reported during the period and to <a href="https://github.com/okfn/bubbletree">OKFN</a>.</div>
+        <p
+        <div class="socialmedia" data-step="6" data-intro="Feel Free to share if you like it!" data-position='left'>
+                <table>
+                  <tr>
+                    <td valign="middle" ><a href="http://www.facebook.com/sharer.php?u=http://data.unhcr.org/jordan/fts" target="_blank"><img src="./images/Facebook.png" style="height: 25px; width: 25px"/></a></td>
+                    <td valign="middle"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdata.unhcr.org/jordan/fts&amp;media=http%3A%2F%2Fdata.unhcr.org/jordan/fts/thumbnail.png" target="_blank" data-pin-do="buttonBookmark" ><img src="./images/Pinterest.png" style="height: 28px; width: 28px"/></a></td>
+                    <td valign="middle"><a href="https://twitter.com/intent/tweet?url=http://data.unhcr.org/jordan/fts&text=%23Jordan%20@Refugees" target="_blank"><img src="./images/Twitter.png" style="height: 25px; width: 25px"/></a></td>
+                    <td valign="middle"><a href="https://plus.google.com/share?&hl=en&url=http://data.unhcr.org/jordan/fts" target="_blank"><img src="./images/Google.png" style="height: 25px; width: 25px"/></a></td>
+                </tr>
+                </table>
+        </div>
+    </div>
+    <div class="bubbletree-wrapper">
+        <div class="bubbletree"></div>
+    </div>
+</body>
+      <!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://data.unhcr.org/piwik/" : "http://data.unhcr.org/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 14);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://data.unhcr.org/piwik/piwik.php?idsite=14" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+    
+</html>
