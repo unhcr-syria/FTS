@@ -81,6 +81,17 @@
                   <center> <h4>Distribution of received funds/gap across Sectors</h4> </center>
                 </div>
 
+        <center>
+            <img src="images/basicassistance.svg" alt="Basic Needs" height="30px" width="30px">
+            <img src="images/education.svg" alt="Education" height="30px" width="30px">
+            <img src="images/foodsecurity.svg" alt="Food Security" height="30px" width="30px">
+            <img src="images/health.svg" alt="Health" height="30px" width="30px">
+            <img src="images/protection.svg" alt="Protection" height="30px" width="30px">
+            <img src="images/shelter.svg" alt="Shelter" height="30px" width="30px">
+            <img src="images/wash.svg" alt="WASH" height="30px" width="30px">
+            
+                
+                
               </div>
             </div>
             <div class="col-md-6">
@@ -191,7 +202,7 @@
                 .elasticX(true)
                 .on("filtered", getFiltersValues)
                 .data(function(group) { return group.top(4); })
-                .colors(['#3182bd'])
+                .colors(['#5bc0de'])
                 .colorDomain([0,0])
                 .colorAccessor(function(d, i){return 1;})
                 .xAxis().ticks(4).tickFormat(d3.format("s"));
@@ -207,7 +218,7 @@
                 .elasticX(true)
                 .on("filtered", getFiltersValues)
                 .data(function(group) { return group.top(10); })
-                .colors(['#3182bd'])
+                .colors(['#5bc0de'])
                 .colorDomain([0,0])
                 .colorAccessor(function(d, i){return 1;})
                 .xAxis().ticks(4).tickFormat(d3.format("s"));
@@ -224,7 +235,7 @@
                 .elasticX(true)
                 .on("filtered", getFiltersValues)
                 .data(function(group) { return group.top(20); })
-                .colors(['#3182bd'])
+                .colors(['#5bc0de'])
                 .colorDomain([0,0])
                 .colorAccessor(function(d, i){return 1;})
                 .xAxis().ticks(4).tickFormat(d3.format("s"));
@@ -239,7 +250,7 @@
                 .elasticX(true)
                 .on("filtered", getFiltersValues)
                 .data(function(group) { return group.top(20); })
-                .colors(['#3182bd'])
+                .colors(['#e99002'])
                 .colorDomain([0,0])
                 .colorAccessor(function(d, i){return 1;})
                 .xAxis().ticks(4).tickFormat(d3.format("s"));
