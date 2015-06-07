@@ -66,7 +66,7 @@
             <br>
             <div id="count-info" >
                  You have selected <strong><span class="filter-count "></span> reports</strong> out of a total of <span class="total-count "></span> reports
-                 <a class="btn btn-primary btn-sm" href="javascript:dc.filterAll();quarter_chart.filter('Yearly');dc.redrawAll();">Click to reset all filters</a>
+                 <a class="btn btn-primary btn-sm" href="javascript:dc.filterAll();quarter_chart.filter('0- Yearly');dc.redrawAll();">Click to reset all filters</a>
             </div>
 
        </div>
@@ -223,13 +223,13 @@
                 .colors(['#5bc0de'])
                 .colorDomain([0,0])
                 .colorAccessor(function(d, i){return 1;})
-				.ordering(function(d) {
-					if(d.key == "Yearly") return 0;
-					else if(d.key == "First Quarter") return 1;
-					else if(d.key == "Second Quarter") return 2;
-					else if(d.key == "Third Quarter") return 3;
-					else if(d.key == "Fourth Quarter") return 4;
-					})
+/*				.ordering(function(d) {
+					if(d.key == "0- Yearly") return 0;
+					else if(d.key == "1- First Quarter") return 1;
+					else if(d.key == "2- Second Quarter") return 2;
+					else if(d.key == "3- Third Quarter") return 3;
+					else if(d.key == "4- Fourth Quarter") return 4;
+					})*/
                 .xAxis().ticks(4).tickFormat(d3.format("s"));
 			
 				
@@ -240,38 +240,38 @@
 				  chart.selectAll('rect').on("click", function(d) {
 				  
 				  
-					if (d.key == "First Quarter")
+					if (d.key == "1- First Quarter")
 					{
 					quarter_chart.filterAll();
-					quarter_chart.filter("First Quarter");
+					quarter_chart.filter("1- First Quarter");
 					dc.redrawAll();					
 					dc.renderAll();
 					}
-					else if (d.key == "Yearly")
+					else if (d.key == "0- Yearly")
 					{
 					quarter_chart.filterAll();					
-					quarter_chart.filter("Yearly");
+					quarter_chart.filter("0- Yearly");
 					dc.redrawAll();										
 					dc.renderAll();
 					}					
-					else if (d.key == "Second Quarter")
+					else if (d.key == "2- Second Quarter")
 					{
 					quarter_chart.filterAll();					
-					quarter_chart.filter("Second Quarter");
+					quarter_chart.filter("2- Second Quarter");
 					dc.redrawAll();										
 					dc.renderAll();
 					}
-					else if (d.key == "Third Quarter")
+					else if (d.key == "3- Third Quarter")
 					{
 					quarter_chart.filterAll();					
-					quarter_chart.filter("Third Quarter");
+					quarter_chart.filter("3- Third Quarter");
 					dc.redrawAll();										
 					dc.renderAll();
 					}
-					else if (d.key == "Fourth Quarter")
+					else if (d.key == "4- Fourth Quarter")
 					{
 					quarter_chart.filterAll();					
-					quarter_chart.filter("Fourth Quarter");
+					quarter_chart.filter("4- Fourth Quarter");
 					dc.redrawAll();										
 					dc.renderAll();
 					}					
@@ -279,31 +279,38 @@
 					
 				  });
 				  	chart.selectAll('text').on("click", function(d) {
-					if (d.key == "First Quarter")
+					if (d.key == "0- Yearly")
+					{
+					quarter_chart.filterAll();					
+					quarter_chart.filter("0- Yearly");
+					dc.redrawAll();										
+					dc.renderAll();
+					}						
+					else if (d.key == "1- First Quarter")
 					{
 					quarter_chart.filterAll();
-					quarter_chart.filter("First Quarter");
+					quarter_chart.filter("1- First Quarter");
 					dc.redrawAll();										
 					dc.renderAll();
 					}
-					else if (d.key == "Second Quarter")
+					else if (d.key == "2- Second Quarter")
 					{
 					quarter_chart.filterAll();					
-					quarter_chart.filter("Second Quarter");
+					quarter_chart.filter("2- Second Quarter");
 					dc.redrawAll();										
 					dc.renderAll();
 					}
-					else if (d.key == "Third Quarter")
+					else if (d.key == "3- Third Quarter")
 					{
 					quarter_chart.filterAll();					
-					quarter_chart.filter("Third Quarter");
+					quarter_chart.filter("3- Third Quarter");
 					dc.redrawAll();										
 					dc.renderAll();
 					}
-					else if (d.key == "Fourth Quarter")
+					else if (d.key == "4- Fourth Quarter")
 					{
 					quarter_chart.filterAll();					
-					quarter_chart.filter("Fourth Quarter");
+					quarter_chart.filter("4- Fourth Quarter");
 					dc.redrawAll();										
 					dc.renderAll();
 					}	
@@ -344,7 +351,7 @@
                 .xAxis().ticks(4).tickFormat(d3.format("s"));
 
             cf.partnergap = cf.dimension(function(d) { return d.Partner; });
-            var partnergapByTotal = cf.partner.group().reduceSum(function (d) { return (d.Required - d.NewReceived); });
+            var partnergapByTotal = cf.partner.group().reduceSum(function (d) { return d.Gap; });
             var partnergap = cf.partnergap.group();
             partnergap_chart.width(250).height(500)
                 .dimension(cf.partnergap)
@@ -430,7 +437,7 @@
             dc.renderAll();
 			
 					quarter_chart.filterAll();					
-					quarter_chart.filter("Yearly");
+					quarter_chart.filter("0- Yearly");
 					dc.redrawAll();										
 					dc.renderAll();
 					
