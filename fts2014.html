@@ -274,8 +274,13 @@
 					quarter_chart.filter("4- Fourth Quarter");
 					dc.redrawAll();										
 					dc.renderAll();
-					}					
+					}			
 					
+						d3.selectAll("g.row").call(rowTip);
+						d3.selectAll("g.row").on('mouseover', rowTip.show).on('mouseout', rowTip.hide);
+						var stackChart = 'div#gapReceived.dc-chart rect';
+						d3.selectAll(stackChart).call(barTip);
+						d3.selectAll(stackChart).on('mouseover', barTip.show).on('mouseout', barTip.hide);						
 					
 				  });
 				  	chart.selectAll('text').on("click", function(d) {
@@ -314,8 +319,11 @@
 					dc.redrawAll();										
 					dc.renderAll();
 					}	
-
-                                    
+						d3.selectAll("g.row").call(rowTip);
+						d3.selectAll("g.row").on('mouseover', rowTip.show).on('mouseout', rowTip.hide);
+						var stackChart = 'div#gapReceived.dc-chart rect';
+						d3.selectAll(stackChart).call(barTip);
+						d3.selectAll(stackChart).on('mouseover', barTip.show).on('mouseout', barTip.hide);                                    
 					
 				  });
 				});				
