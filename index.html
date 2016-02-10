@@ -69,7 +69,7 @@
             <br>
             <div id="count-info" >
                  You have selected <strong><span class="filter-count "></span> reports</strong> out of a total of <span class="total-count "></span> reports
-                 <a class="btn btn-primary btn-sm" href="javascript:dc.filterAll();quarter_chart.filter('0- Three Quarters');dc.redrawAll();">Click to reset all filters</a>
+                 <a class="btn btn-primary btn-sm" href="javascript:dc.filterAll();quarter_chart.filter('0- Overall');dc.redrawAll();">Click to reset all filters</a>
             </div>
 
        </div>
@@ -248,10 +248,10 @@
 					dc.redrawAll();					
 					dc.renderAll();
 					}
-					else if (d.key == "0- Three Quarters")
+					else if (d.key == "0- Overall")
 					{
 					quarter_chart.filterAll();					
-					quarter_chart.filter("0- Three Quarters");
+					quarter_chart.filter("0- Overall");
 					dc.redrawAll();										
 					dc.renderAll();
 					}					
@@ -285,10 +285,10 @@
 					
 				  });
 				  	chart.selectAll('text').on("click", function(d) {
-					if (d.key == "0- Three Quarters")
+					if (d.key == "0- Overall")
 					{
 					quarter_chart.filterAll();					
-					quarter_chart.filter("0- Three Quarters");
+					quarter_chart.filter("0- Overall");
 					dc.redrawAll();										
 					dc.renderAll();
 					}						
@@ -457,7 +457,7 @@
             dc.renderAll();
 			
 					quarter_chart.filterAll();					
-					quarter_chart.filter("0- Three Quarters");
+					quarter_chart.filter("0- Overall");
 					dc.redrawAll();										
 					dc.renderAll();
 					
